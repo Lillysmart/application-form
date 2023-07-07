@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Application Form</title>
-    <link rel="stylesheet" href="form.css" >
-</head>
-<body>
- <h1> University Application Form </h1>
- <form action="https://formsubmit.co/leonasmart1@gmail.com" method="POST">
-  
-   <label for="name" >Fist name :</label>
-   <input type="text" id="name" name="user_name" placeholder="Enter your name" required ><br/>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1>University Application Form</h1>
+    <form action="https://formsubmit.co/leonasmart1@gmail.com" method="POST">
+      <label for="name">Fist name :</label>
+      <input
+        type="text"
+        id="name"
+        name="user_name"
+        placeholder="Enter your name"
+        required
+      /><br />
 
+      <label for="lastname">Last name:</label>
+      <input
+        type="text"
+        id="lastname"
+        name="user_lastname"
+        placeholder="Enter your surname"
+        required
+      /><br />
 
-<label for="lastname" >Last name:</label>
-   <input type="text" id="lastname" name="user_lastname" placeholder="Enter your surname" required ><br/>
+      <p>
+        Gender:
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required />
 
- <p> Gender:
-  <label for="male">Male</label>
-  <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+      </p>
 
-  <label for="female">Female</label>
-  <input type="radio" id="female" name="gender" value="female" required></p> 
+      <label for="d_o_b"> Date of Birth:</label>
+      <input type="date" id="d_o_b" name="user_date_of_birth" required /><br />
 
-  <label for="d_o_b"> Date of Birth:</label>
-  <input type="date" id="d_o_b" name="user_date_of_birth" required><br/>
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        id="email"
+        name="user_email"
+        placeholder="Enter your email"
+        required
+      /><br />
 
-   <label for="email">Email :</label>
-   <input type="email" id="email" name="user_email" placeholder="Enter your email" required><br/>
+      <label for="number">Cell Phone Number :</label>
+      <input type="tel" id="number" name="user_number" required /><br />
 
-   <label for="number">Cell Phone Number :</label>
-   <input type="tel" id="number" name="user_number" required><br/>
+      <label for="course">Program of your choice:</label>
+      <select id="course">
+        <option value="select" selected>Select the program</option>
+        <option value="computer science">Computer Science</option>
+        <option value="software engineering">Software Engineering</option>
+        <option value="data analyst">Data Analyst</option></select
+      ><br />
 
-   <label for="course" >Program of your choice:</label>
-   <select id="course">
-    <option value="select" selected>Select the program</option>
-    <option value="computer science"> Computer Science </option>
-    <option value="software engineering"> Software Engineering</option>
-    <option value="data analyst">Data Analyst</option>
-   </select><br/>
+      <label for="motivation">Motivation :</label>
+      <textarea
+        id="motivation"
+        rows="1"
+        name="user_motivation"
+        required
+      ></textarea
+      ><br />
 
-<label for="motivation">Motivation :</label>
-<textarea id="motivation" rows="1"  name="user_motivation" required>
-</textarea><br/>
-
-<button type="submit" >Submit</button>
-  </form>
-</body>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>

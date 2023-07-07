@@ -1,15 +1,19 @@
-form{background-color:#A2D2FF ;
-height: 500px; width:400px ;
-border-color:black;
-margin-left: 400px;
-padding: 20px;
+form {
+  background-color: #a2d2ff;
+  height: 500px;
+  width: 400px;
+  border-color: black;
+  margin-left: 400px;
+  padding: 20px;
+  display: grid;
+
+}
+p {
+  text-align: left;
 }
 
-label{
-    width: 100px; display: inline-block;}
-    p{display: block;}
-body{
-}h1{
-border: 5px;
-border-style: ridge ;
-padding-left: 400px;}
+h1 {
+  border: 5px;
+  border-style: ridge;
+  padding-left: 400px;
+}
