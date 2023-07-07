@@ -9,13 +9,14 @@
 </head>
 <body>
  <h1> University Application Form </h1>
-  <form>
+ <form action="https://formsubmit.co/leonasmart1@gmail.com" method="POST">
+  
    <label for="name" >Fist name :</label>
-   <input type="text" id="name" name="user_name" placeholder="Enter your name" ><br/>
+   <input type="text" id="name" name="user_name" placeholder="Enter your name" required ><br/>
 
 
 <label for="lastname" >Last name:</label>
-   <input type="text" id="lastname" name="user_lastname" placeholder="Enter your surname" ><br/>
+   <input type="text" id="lastname" name="user_lastname" placeholder="Enter your surname" required ><br/>
 
  <p> Gender:
   <label for="male">Male</label>
@@ -42,10 +43,10 @@
    </select><br/>
 
 <label for="motivation">Motivation :</label>
-<textarea id="motivation"  rows="1" name="user_motivation">
+<textarea id="motivation"  rows="1" name="user_motivation" required>
 </textarea><br/>
 
-
+<input type="submit" >
   </form>
 </body>
 </html>
